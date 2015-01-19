@@ -50,7 +50,8 @@ function extremetechnologies_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'extremetechnologies' ),
+		'header' => __( 'Header Menu', 'extremetechnologies' ),
+		'footer' => __( 'Footer Menu', 'extremetechnologies' ),
 	) );
 
 	/*

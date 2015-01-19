@@ -1,0 +1,361 @@
+/*********************************************************
+ *       Project: 
+ *   Description: 
+ *       Created: 
+ *       Version: 1.0.1
+ * Support Email: 
+----------------------*/
+
+/******************** Google Fonts */
+@import url(//fonts.googleapis.com/css?family=Lato:300,400,700);
+
+/******************** General Style */
+
+body {
+	font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato';
+	color: #333;
+}
+
+h1 {
+	font-size: 50px;
+	font-weight:400;
+}
+
+h2 {
+	font-size:32px;
+	font-weight:400;
+}
+
+h3 {
+	font-size:24px;
+	font-weight:400;
+	margin:0;
+	padding:0;
+}  
+
+h4 {
+}
+
+h5 {
+}   
+
+h6 {
+}
+
+p {
+	font-size:16px;
+	line-height: 150%;
+	color: #666;
+}
+
+.bold {
+    font-weight:bold;
+}
+
+.white {
+    color: #fff;
+}
+
+.black {
+    color: #333;
+}
+
+.center {
+    text-align: center;
+}
+
+img.circle {
+	border-radius: 999px;
+	border: 10px solid #fff;
+	box-shadow: 0 0 0 1px #ccc;
+}
+
+a, a:hover {
+	font-family: 'Lato';
+	color:#184386;
+	text-decoration: none;
+	font-weight:700;
+}
+
+a.button:hover {
+	opacity:0.75;
+}
+
+a.button.white {
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #184386;
+	font-weight: 400;
+	background: #fff;
+	display: inline-block;
+	padding: 0 20px;
+	border-radius: 999px;
+	margin: 20px 0 0;
+}
+
+.home-hero a.button {
+	background:-webkit-linear-gradient(#fff 0%, #B9B97C 100%);
+	height:48px;
+	line-height:48px;
+	color:#333;
+	font-weight:400;
+	font-size:22px;
+	padding:0 30px;
+	border-radius:999px;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+	display:inline-block;
+}
+
+li.social > a > img {
+	height: 32px;
+}
+
+
+/******************** Navigation */
+
+.navbar {
+    margin-bottom: 0;
+    border:0;
+}
+
+.navbar-header {
+}
+
+.navbar-default {
+	height: 90px;
+	background: -webkit-linear-gradient(#F5EFE3 0%, #fff 100%);
+	border-bottom: 2px solid #B9B97C;
+	box-shadow: 0 0 25px 0 rgba(0,0,0,0.5);
+}
+
+.navbar-brand {
+    padding: 18px 0 0 0;
+    margin:0;
+}
+
+a.navbar-brand img {
+	width:240px;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #878787;
+	font-size: 16px;
+	font-weight: 300;
+	padding: 45px 30px 20px 0;
+}
+
+.navbar-nav>li.social>a {
+	padding: 30px 0 0 7px;
+}
+
+
+/******************** Homepage */
+
+.home-hero {
+	background-image: url('../img/bkg-home-hero.jpg');
+	background-position: center;
+	background-size: cover;
+	padding: 50px 0;
+}
+
+.home-hero h3 {
+	font-weight:300;
+}
+
+.home-hero a {
+	margin: 40px 0 75px;
+}
+
+.home-hero p {
+	color: #fff;
+	font-size:14px;
+	font-family: 'Lato';
+}
+
+.home-white-band {
+	padding:70px 0;
+	text-align:center;
+}
+
+.home-white-band img {
+	height:100px;
+	margin:40px 0 25px;
+}
+
+.home-white-band p {
+	font-size: 14px;
+	color: #999;
+	margin:10px 0 20px;
+	line-height:130%;
+}
+
+.home-white-band a {
+	text-transform: uppercase;
+}
+
+.home-staffing-band {
+	padding:30px 0;
+}	
+
+.home-staffing-band h2 {
+	padding: 13% 0 0;
+}
+
+.home-gray-band {
+	background-image: url('../img/bkg-home-gray-band.jpg');
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	padding: 130px 0;
+}
+
+.home-blue-band {
+	background-image: url('../img/bkg-home-blue-band.jpg');
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	padding: 130px 0;
+}
+
+.home-prefooter {
+	background:#333;
+	padding: 50px 0;
+	text-align: center;
+}
+
+
+/******************** Footer */
+
+.footer {
+	background-image: url('../img/bkg-footer.jpg');
+	background-position: center;
+	background-size: cover;
+	padding: 40px 0;
+	min-height: 300px;
+}
+
+.footer img.logo {
+	height:42px;
+}
+
+.footer img.social {
+	height:32px;
+}
+
+.footer p.copyright {
+	font-size:12px;
+	color: rgba(255,255,255,0.5);
+}
+
+.footer p {
+	margin-top:15px;
+}
+
+.footer a {
+	color: #fff;
+}
+
+.footer ul {
+	list-style: none;
+	margin: 25px 0 0 0;
+	padding: 0;
+	overflow: auto;
+}
+
+.footer ul li {
+	float: left;
+	font-size: 13px;
+	padding: 0 10px 0 0;
+}
+
+
+/******************** Footer section */
+
+
+
+/******************** Media Queries */
+
+@media (max-width: 1199px) {
+    
+}
+
+@media (max-width: 991px) {
+	
+	.navbar-brand {
+		padding: 24px 0 0 0;
+		margin: 0;
+	}
+
+	a.navbar-brand img {
+		width:200px;
+	}
+	
+	li.social {
+		display:none;
+	}  
+	
+	.home-staffing-band h2 {
+		padding: 0;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.navbar-brand {
+		padding: 9px 0 0 10px;
+		margin: 0;
+	}
+
+	a.navbar-brand img {
+		width:160px;
+	}
+
+	.navbar-default {
+		height: 55px;
+	}
+	
+	.navbar-collapse {
+		position: relative;
+		z-index: 999;
+		box-shadow: 0 20px 20px 0 rgba(0,0,0,0.5);
+	}
+	
+	.navbar-toggle {
+		margin-right: 10px;
+		margin-top: 10px;
+		margin-bottom: 8px;
+	}
+	
+	.navbar-nav {
+		background: #fff;
+		margin: 0 -15px;
+	}
+	
+	.home-staffing-band p {
+		padding: 0 0 25px;
+	}
+	
+	.footer .container > div {
+		margin-bottom: 30px;
+	}
+	
+	.footer ul li {
+		float:none;
+	}
+	 
+}
+
+@media (max-width: 480px) {
+	.navbar-default .navbar-nav>li>a {
+		color: #878787;
+		font-size: 16px;
+		font-weight: 300;
+		padding: 10px;
+		border-bottom:1px solid #eee;
+	}
+}
