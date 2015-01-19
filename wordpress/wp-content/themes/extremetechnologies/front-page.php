@@ -3,7 +3,7 @@
 
 get_header(); ?>
 
-
+<main>
 <div class="home-hero">
 	<div class="container">
 		<div class="row">
@@ -80,5 +80,5 @@ get_header(); ?>
 	</div>
 </div>
 
-	
+</main>	
 <?php get_footer(); ?>

@@ -7,6 +7,7 @@
  * @package extremetechnologies
  */
 ?>
+<footer>
     <div class="footer">
         <div class="container">
 			<div class="col-md-6">
@@ -42,6 +43,6 @@
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="<?php bloginfo('template_directory');?>/js/bootstrap.min.js"></script>
-
+</footer>
  </body>
 </html>
