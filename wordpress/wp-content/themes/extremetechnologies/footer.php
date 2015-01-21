@@ -13,12 +13,32 @@
 			<div class="col-md-6">
 				<a href="#"><img src="<?php bloginfo('template_directory');?>/img/footer-logo.png" class="logo" /></a>
 				<ul>
-					<li><a href="#">Home</a></li>
+				<?php
+					$menu_name = "header";
+
+						if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name ] ) ) {
+							$menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
+
+							$menu_items = wp_get_nav_menu_items($menu->term_id);
+
+							
+							$menu_list = "";
+							foreach ( (array) $menu_items as $key => $menu_item ) {
+								$title = $menu_item->title;
+								$url = $menu_item->url;
+								$menu_list .="<li><a href=".$url.">".$title."</a></li>";
+							}
+						} else {
+							$menu_list = '<li>Menu "' . $menu_name . '" not defined.</li>';
+						}
+						echo $menu_list;
+				?>
+				<!--<li><a href="#">Home</a></li>
 					<li><a href="#">Our Approach</a></li>
 			        <li><a href="#">Services</a></li>
 			        <li><a href="#">Blog</a></li>
 			        <li><a href="#">Talent Network</a></li>
-			        <li><a href="#">Contact</a></li>
+			        <li><a href="#">Contact</a></li>-->
 				</ul>
 				<p class="copyright">&copy; <?php echo date("Y") ?> Extreme Technologies Inc. - Houston, Texas - All Rights Reserved.</p>
 			</div>
