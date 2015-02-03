@@ -13,7 +13,20 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+<div class="subhero subhero-blog">
+	<div class="container">
+		<div class="col-sm-8">
+			<h1>Blog</h1>
+			<h3>Read about company news, updates and industry information here.</h3>
+		</div>
+		<div class="col-sm-4">
+			<a href="/contact" class="button orange contact">Contact Us Today</a>
+		</div>
+	</div>
+</div>
+
+	<div id="primary" class="content-area container">
+		<div class="col-lg-9 col-sm-8">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -40,7 +53,12 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
+	</div>
 
-<?php get_sidebar(); ?>
+<div class="col-lg-3 col-sm-4">
+	<?php get_sidebar(); ?>
+</div>
+	
+</div><!-- #primary -->
+
 <?php get_footer(); ?>

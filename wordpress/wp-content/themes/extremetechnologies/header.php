@@ -18,6 +18,7 @@
     <!-- Bootstrap -->
     <link href="<?php bloginfo('template_directory');?>/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory');?>/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/slick/slick.css"/>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -37,7 +38,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php">
+      <a class="navbar-brand" href="/">
         <img src="<?php bloginfo('template_directory');?>/img/logo.png" />
       </a>
     </div>
@@ -70,9 +71,10 @@
         <li><a href="#">Blog</a></li>
         <li><a href="#">Talent Network</a></li>
         <li><a href="#">Contact</a></li>-->
-        <li class="social"><a href="#"><img src="<?php bloginfo('template_directory');?>/img/icon-google-gray.png" /></a></li>
-        <li class="social"><a href="#"><img src="<?php bloginfo('template_directory');?>/img/icon-twitter-gray.png" /></a></li>
-        <li class="social"><a href="#"><img src="<?php bloginfo('template_directory');?>/img/icon-linkedin-gray.png" /></a></li>
+        <li class="social"><a href="#" class="social-header-google">Google+</a></li>
+		<li class="social"><a href="#" class="social-header-twitter">Twitter</a></li>
+		<li class="social"><a href="#" class="social-header-linkedin">Linkedin</a></li>
+		<li class="social"><a href="#" class="social-header-facebook">Facebook</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
